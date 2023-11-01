@@ -1,0 +1,136 @@
+:root {
+    --dark-text: #333;
+    --light-text: #767268;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+
+.section__header {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--dark-text);
+    margin: 4rem 0;
+}
+
+/* room section */
+.card-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 8rem;
+    gap: 2.5rem;
+}
+
+.room-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.room-item img {
+    width: 100%;
+    display: flex;
+}
+
+.room-item__info {
+    height: 100%;
+    padding: 1.5rem;
+    color: var(--dark-text);
+}
+
+.room-item__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--dark-text);
+}
+
+.room-item__description {
+    width: 100%;
+    margin-top: 1rem;
+    color: var(--light-text);
+    font-size: 1.4rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+.room-features__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.room-features__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--dark-text);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.room-features__list-item img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0.5rem;
+}
+
+/* service section */
+.card-grid-6 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.service-item__name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    color: var(--dark-text);
+}
+
+.gallery-wrapper {
+    display: flex;
+    margin: 0 8rem;
+}
+
+.gallery-item {
+    width: 232px;
+    margin-right: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
