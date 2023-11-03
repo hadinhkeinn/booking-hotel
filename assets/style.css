@@ -1,25 +1,78 @@
 :root {
     --dark-text: #333;
     --light-text: #767268;
+    --primary:#0077b6;
+    --secondary:#48cae4;
+    --black:#333;
+    --white:#fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: .2s linear;
 }
 
 html {
     font-family: 'Poppins', sans-serif;
     font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--primary);
+    border-radius: .5rem;
+}
 
 .section__header {
     font-size: 4rem;
     text-align: center;
     color: var(--dark-text);
     margin: 4rem 0;
+}
+
+section{
+    padding: 5rem 7%;
+}
+
+.heading{
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--primary);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--secondary);
 }
 
 /* room section */
@@ -136,76 +189,7 @@ html {
     object-fit: cover;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
-:root{
-    --primary:#0077b6;
-    --secondary:#48cae4;
-    --black:#333;
-    --white:#fff;
-    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    outline: none; border: none;
-    text-decoration: none;
-    /* text-transform: capitalize; */
-    transition: .2s linear;
-}
-
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
-}
-
-html::-webkit-scrollbar{
-    width: .8rem;
-}
-
-html::-webkit-scrollbar-track{
-    background: transparent;
-}
-
-html::-webkit-scrollbar-thumb{
-    background: var(--primary);
-    border-radius: .5rem;
-}
-
-section{
-    padding: 5rem 7%;
-}
-
-.heading{
-    font-size: 4rem;
-    color: var(--primary);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin-bottom: 3rem;
-}
-
-.btn{
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 1rem 3rem;
-    background: var(--primary);
-    border-radius: .5rem;
-    color: var(--white);
-    font-size: 1.7rem;
-    cursor: pointer;
-}
-
-.btn:hover{
-    background: var(--secondary);
-}
-
 /* header */
-
 
 #menu-btn{
     display: none;
