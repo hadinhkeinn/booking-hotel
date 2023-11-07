@@ -110,6 +110,10 @@ section {
     margin: 0 1rem;
 }
 
+.current-section {
+    color: var(--primary);
+}
+
 .header .navbar a:hover {
     color: var(--primary);
 }
@@ -258,7 +262,7 @@ section {
 /* room section */
 .card-grid-4 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
 }
 
