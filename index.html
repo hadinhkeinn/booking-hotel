@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-        <!-- font awesome cdn link  -->
+    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- swiper js cdn link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -20,22 +20,159 @@
     <!-- header -->
     <header class="header">
 
+        <a href="#" class="logo"> <i class="fas fa-hotel"></i> Booking hotel </a>
+  
+        <nav class="navbar">
+           <a href="#home">HOME</a>
+           <a href="#about">ABOUT</a>
+           <a href="#room">ROOM</a>
+           <a href="#gallery">GALLERY</a>
+           <a href="#review">REVIEW</a>
+           <a href="#faq">FAQ</a>
+           <a href="#reservation" class="btn"> BOOK NOW</a>
+        </nav>
+  
         <div id="menu-btn" class="fas fa-bars"></div>
-
-    </header>
+  
+     </header>
 
     <!-- Home -->
-    <section id="home">
+    <section class="home" id="home">
 
-    </section>
-
+        <div class="swiper home-slider">
+  
+           <div class="swiper-wrapper">
+  
+              <div class="swiper-slide slide" style="background: url(./assets/images/home-slide1.jpg) no-repeat;">
+                 <div class="content">
+                    <h3>Elevate Your Stay</h3>
+                    <a href="#" class="btn"> Visit our offer</a>
+                 </div>
+              </div>
+  
+              <div class="swiper-slide slide" style="background: url(./assets/images/home-slide2.jpg) no-repeat;">
+                 <div class="content">
+                    <h3>Elevate Your Stay</h3>
+                    <a href="#" class="btn"> Visit our offer</a>
+                 </div>
+              </div>
+  
+              <div class="swiper-slide slide" style="background: url(./assets/images/home-slide3.jpg) no-repeat;">
+                 <div class="content">
+                    <h3>Elevate Your Stay</h3>
+                    <a href="#" class="btn"> Visit our offer</a>
+                 </div>
+              </div>
+  
+              <div class="swiper-slide slide" style="background: url(./assets/images/home-slide4.jpg) no-repeat;">
+                 <div class="content">
+                    <h3>Elevate Your Stay</h3>
+                    <a href="#" class="btn"> Visit our offer</a>
+                 </div>
+              </div>
+  
+           </div>
+  
+           <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+  
+        </div>
+  
+     </section>
     <!-- Check Availability -->
     <section class="availability">
+
+        <form action="">
+  
+           <div class="box">
+              <p>check in </p>
+              <input type="date" class="input">
+           </div>
+  
+           <div class="box">
+              <p>check out </p>
+              <input type="date" class="input">
+           </div>
+  
+           <div class="box">
+              <p>adults </p>
+              <select name="adults" id="" class="input">
+                 <option value="1">1 adults</option>
+                 <option value="2">2 adults</option>
+                 <option value="3">3 adults</option>
+                 <option value="4">4 adults</option>
+                 <option value="5">5 adults</option>
+                 <option value="6">6 adults</option>
+                 <option value="7">7 adults</option>
+                 <option value="8">8 adults</option>
+                 <option value="9">9 adults</option>
+                 <option value="10">10 adults</option>
+              </select>
+           </div>
+  
+           <div class="box">
+              <p>children </p>
+              <select name="child" id="" class="input">
+                 <option value="1">1 child</option>
+                 <option value="2">2 child</option>
+                 <option value="3">3 child</option>
+                 <option value="4">4 child</option>
+                 <option value="5">5 child</option>
+                 <option value="6">6 child</option>
+                 <option value="7">7 child</option>
+                 <option value="8">8 child</option>
+                 <option value="9">9 child</option>
+                 <option value="10">10 child</option>
+              </select>
+           </div>
+  
+           <div class="box">
+              <p>rooms </p>
+              <select name="rooms" id="" class="input">
+                 <option value="1">1 rooms</option>
+                 <option value="2">2 rooms</option>
+                 <option value="3">3 rooms</option>
+                 <option value="4">4 rooms</option>
+                 <option value="5">5 rooms</option>
+                 <option value="6">6 rooms</option>
+                 <option value="7">7 rooms</option>
+                 <option value="8">8 rooms</option>
+                 <option value="9">9 rooms</option>
+                 <option value="10">10 rooms</option>
+              </select>
+           </div>
+  
+           <input type="submit" value="Check availability" class="btn">
+  
+        </form>
+  
+     </section>
 
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section class="about" id="about">
+
+        <div class="row">
+  
+           <div class="image">
+              <img src="./assets/images/about.jpg" alt="">
+           </div>
+  
+           <div class="content">
+              <h3>About us</h3>
+              <p>We take pride in being a professional team with a mission to provide the best 
+                 booking experience for you. With many years of experience in the travel and 
+                 hotel industry, we are committed to offering reliable and convenient room 
+                 reservation services.</p>
+              <p>You can easily search, compare prices, and book with just a few clicks. Quality 
+                 and customer satisfaction are always our top priorities. We guarantee that you 
+                 will receive the best rates and high-quality hotel rooms that meet your needs.</p>
+           </div>
+  
+        </div>
+  
+     </section>
 
     </section>
 
@@ -401,27 +538,15 @@
             <a href="#"> <i class="fas fa-phone"></i> 0962189639 </a>
             <a href="#"> <i class="fas fa-phone"></i> 0905168679</a>
             <a href="#"> <i class="fas fa-envelope"></i> nhom9@gmail.com</a>
-            <a href="#"> <i class="fas fa-map"></i> Thu Duc, TP Ho Chi Minh, Viet Nam</a>
-       </div>
-
-       <div class="box">
-            <h3>QUICK LINKS</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> Home</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> About</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> Rooms</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> Gallery</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> Review</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> Faqs</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> Reservation</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Thu Duc, TP Ho Chi Minh, Viet Nam</a>
        </div>
 
         <div class="box">
-            <h3>EXTRA LINKS</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+            <h3>BOOKING INFO</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Refund policy</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Payment methods</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Terms & Conditions</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Privacy policy</a>
         </div>
 
     </div>
