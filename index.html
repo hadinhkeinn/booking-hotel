@@ -8,185 +8,295 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-        <!-- font awesome cdn link  -->
+    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- swiper js cdn link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Room Booking</title>
+    <title>room Booking</title>
 </head>
 
 <body>
     <!-- header -->
     <header class="header">
 
+        <a href="#" class="logo"> <i class="fas fa-hotel"></i> Booking hotel </a>
+
+        <nav class="navbar">
+            <a href="#home"><span class="current-section">HOME</span></a>
+            <a href="#about"><span class="">ABOUT</span></a>
+            <a href="./room.html"><span class="">ROOM</span></a>
+            <a href="#gallery"><span class="">GALLERY</span></a>
+            <a href="#review"><span class="">REVIEW</span></a>
+            <a href="#faq"><span class="">FAQ</span></a>
+            <a href="#reservation" class="btn"> BOOK NOW</a>
+        </nav>
+
         <div id="menu-btn" class="fas fa-bars"></div>
 
     </header>
 
     <!-- Home -->
-    <section id="home">
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url(./assets/images/home-slide1.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Elevate Your Stay</h3>
+                        <a href="#" class="btn"> Visit our offer</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(./assets/images/home-slide2.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Elevate Your Stay</h3>
+                        <a href="#" class="btn"> Visit our offer</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(./assets/images/home-slide3.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Elevate Your Stay</h3>
+                        <a href="#" class="btn"> Visit our offer</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(./assets/images/home-slide4.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Elevate Your Stay</h3>
+                        <a href="#" class="btn"> Visit our offer</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
 
     </section>
-
     <!-- Check Availability -->
     <section class="availability">
+
+        <form action="">
+
+            <div class="box">
+                <p>check in </p>
+                <input type="date" class="input">
+            </div>
+
+            <div class="box">
+                <p>check out </p>
+                <input type="date" class="input">
+            </div>
+
+            <div class="box">
+                <p>adults </p>
+                <select name="adults" id="" class="input">
+                    <option value="1">1 adults</option>
+                    <option value="2">2 adults</option>
+                    <option value="3">3 adults</option>
+                    <option value="4">4 adults</option>
+                    <option value="5">5 adults</option>
+                    <option value="6">6 adults</option>
+                    <option value="7">7 adults</option>
+                    <option value="8">8 adults</option>
+                    <option value="9">9 adults</option>
+                    <option value="10">10 adults</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <p>children </p>
+                <select name="child" id="" class="input">
+                    <option value="1">1 child</option>
+                    <option value="2">2 child</option>
+                    <option value="3">3 child</option>
+                    <option value="4">4 child</option>
+                    <option value="5">5 child</option>
+                    <option value="6">6 child</option>
+                    <option value="7">7 child</option>
+                    <option value="8">8 child</option>
+                    <option value="9">9 child</option>
+                    <option value="10">10 child</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <p>rooms </p>
+                <select name="rooms" id="" class="input">
+                    <option value="1">1 rooms</option>
+                    <option value="2">2 rooms</option>
+                    <option value="3">3 rooms</option>
+                    <option value="4">4 rooms</option>
+                    <option value="5">5 rooms</option>
+                    <option value="6">6 rooms</option>
+                    <option value="7">7 rooms</option>
+                    <option value="8">8 rooms</option>
+                    <option value="9">9 rooms</option>
+                    <option value="10">10 rooms</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Check availability" class="btn">
+
+        </form>
+
+    </section>
 
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section class="about" id="about">
+
+        <div class="row">
+
+            <div class="image">
+                <img src="./assets/images/about.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>About us</h3>
+                <p>We take pride in being a professional team with a mission to provide the best
+                    booking experience for you. With many years of experience in the travel and
+                    hotel industry, we are committed to offering reliable and convenient room
+                    reservation services.</p>
+                <p>You can easily search, compare prices, and book with just a few clicks. Quality
+                    and customer satisfaction are always our top priorities. We guarantee that you
+                    will receive the best rates and high-quality hotel rooms that meet your needs.</p>
+            </div>
+
+        </div>
+
+    </section>
 
     </section>
 
     <!-- Room -->
     <section id="room">
-        <h2 class="section__header">Rooms</h2>
+        <h2 class="heading">Our rooms</h2>
         <div class="card-grid-4">
-            <a class="room-item" href="#">
+            <a class="room-item" href="./room.html">
                 <img src="./assets/images/room-1.jpg" alt="room-1">
                 <div class="room-item__info">
-                    <div class="room-item__title">Grand Deluxe Room</div>
+                    <div class="room-item__title">Supreme Deluxe Room</div>
                     <div class="room-item__description">
-                        Embrace Paris in its purest neo-classical style, where
-                        up-to-the-minute amenities rub along with the charms of the past. You have to try our canopy
-                        beds at least once.
+                        The Supreme Deluxe Room at our luxurious hotel offers an unparalleled blend of elegance and
+                        comfort. This spacious and exquisitely appointed room is designed to cater to the most
+                        discerning guests. With contemporary decor, plush furnishings, and a serene color palette, the
+                        Supreme Deluxe Room creates an inviting and soothing atmosphere.
                     </div>
                 </div>
-                <ul class="room-features__list">
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-1.png" alt="icon-1">
-                        Up to 3 guests
-                    </li>
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-2.png" alt="icon-2">
-                        King size bed
-                    </li>
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-3.png" alt="">
-                        47 m² / 506 sq. ft.
-                    </li>
-                </ul>
+                <div class="room-item__btn">Discover</div>
             </a>
-            <a class="room-item" href="#">
+            <a class="room-item" href="./room.html">
                 <img src="./assets/images/room-2.jpg" alt="room-2">
+                <div class="room-item__info">
+                    <div class="room-item__title">Luxury Room</div>
+                    <div class="room-item__description">
+                        The Luxury Room at our hotel is a haven of sophistication and comfort. This well-appointed room
+                        is designed for guests who appreciate a blend of style and relaxation. With a modern yet
+                        timeless decor, the Luxury Room provides an inviting and serene atmosphere for your stay.
+                    </div>
+                </div>
+                <div class="room-item__btn">Discover</div>
+            </a>
+            <a class="room-item" href="./room.html">
+                <img src="./assets/images/room-3.jpg" alt="room-3">
                 <div class="room-item__info">
                     <div class="room-item__title">Deluxe Room</div>
                     <div class="room-item__description">
-                        In your canopy bed, gazing past prints from the Grand Siècle at your own marble fireplace, every
-                        guest can feel like royalty. Each Deluxe room is subtly distinctive; each is equally refined.
+                        The Deluxe Room at our hotel offers a comfortable and inviting space for your stay. Designed
+                        with a classic yet modern touch, this room provides a welcoming atmosphere for both business and
+                        leisure travelers.
                     </div>
                 </div>
-                <ul class="room-features__list">
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-1.png" alt="icon-1">
-                        Up to 3 guests
-                    </li>
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-2.png" alt="icon-2">
-                        King size bed
-                    </li>
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-3.png" alt="">
-                        40 m² / 431 sq. ft.
-                    </li>
-                </ul>
+                <div class="room-item__btn">Discover</div>
             </a>
-            <a class="room-item" href="#">
-                <img src="./assets/images/room-3.jpg" alt="room-3">
-                <div class="room-item__info">
-                    <div class="room-item__title">Executive Room</div>
-                    <div class="room-item__description">
-                        Surround yourself with the quintessence of Parisian chic in a spacious, bright Executive Room at
-                        the Ritz Paris. A desk, an armchair, a fireplace and for some a rooftop view – and of course, a
-                        majestic king size canopy bed to call your own. And then, outside, ‘le tout Paris’!
-                    </div>
-                </div>
-                <ul class="room-features__list">
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-1.png" alt="icon-1">
-                        Up to 2 guests
-                    </li>
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-2.png" alt="icon-2">
-                        King size bed
-                    </li>
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-3.png" alt="">
-                        34 m² / 366 sq. ft.
-                    </li>
-                </ul>
-            </a>
-            <a class="room-item" href="#">
-                <img src="./assets/images/room-4.jpg" alt="room-4">
-                <div class="room-item__info">
-                    <div class="room-item__title">Superior Room</div>
-                    <div class="room-item__description">
-                        Our Superior Rooms feature marble fireplaces, elaborate mirrors and sumptuous bathrooms.
-                        Unforgettable.
-                    </div>
-                </div>
-                <ul class="room-features__list">
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-1.png" alt="icon-1">
-                        Up to 3 guests
-                    </li>
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-2.png" alt="icon-2">
-                        King size bed
-                    </li>
-                    <li class="room-features__list-item">
-                        <img src="./assets/images/icon-3.png" alt="">
-                        30 m² / 323 sq. ft.
-                    </li>
-                </ul>
-            </a>
-
     </section>
 
-    <section class="service">
-        <h2 class="section__header">Services</h2>
-        <div class="card-grid-6">
-            <div class="service-item">
-                <img src="./assets/images/service-1.jpg" alt="service-1">
-                <div class="service-item__name">Swimming Pool</div>
+    <!-- Services -->
+    <section class="services">
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./assets/images/service-1.png" alt="">
+                <h3>Swimming Pool</h3>
             </div>
-            <div class="service-item">
-                <img src="./assets/images/service-2.jpg" alt="service-2">
-                <div class="service-item__name">Restaurant</div>
+
+            <div class="box">
+                <img src="./assets/images/service-2.png" alt="">
+                <h3>Food & Drink</h3>
             </div>
-            <div class="service-item">
-                <img src="./assets/images/service-3.jpg" alt="service-3">
-                <div class="service-item__name">Spa Treatments</div>
+
+            <div class="box">
+                <img src="./assets/images/service-3.png" alt="">
+                <h3>Restaurant</h3>
             </div>
-            <div class="service-item">
-                <img src="./assets/images/service-4.jpg" alt="service-4">
-                <div class="service-item__name">Fitness</div>
+
+            <div class="box">
+                <img src="./assets/images/service-4.png" alt="">
+                <h3>Fitness</h3>
             </div>
-            <div class="service-item">
-                <img src="./assets/images/service-5.jpg" alt="service-5">
-                <div class="service-item__name">Resort Beach</div>
+
+            <div class="box">
+                <img src="./assets/images/service-5.png" alt="">
+                <h3>Beauty Spa</h3>
             </div>
+
+            <div class="box">
+                <img src="./assets/images/service-6.png" alt="">
+                <h3>Resort Beach</h3>
+            </div>
+
         </div>
+
     </section>
 
     <!-- Gallery -->
-    <section id="gallery">
-        <h2 class="section__header">Gallery</h2>
-        <div class="gallery-wrapper">
-            <img src="./assets/images/gallery-1.jpg" alt="gallery-1">
-            <img src="./assets/images/gallery-2.jpg" alt="gallery-2">
-            <img src="./assets/images/gallery-3.jpg" alt="gallery-3">
-            <img src="./assets/images/gallery-4.jpg" alt="gallery-4">
-            <img src="./assets/images/gallery-5.jpg" alt="gallery-5">
-            <img src="./assets/images/gallery-6.jpg" alt="gallery-6">
-            <img src="./assets/images/gallery-7.jpg" alt="gallery-7">
-            <img src="./assets/images/gallery-8.jpg" alt="gallery-8">
-            <img src="./assets/images/gallery-9.jpg" alt="gallery-9">
-            <img src="./assets/images/gallery-10.jpg" alt="gallery-10">
-            <img src="./assets/images/gallery-11.jpg" alt="gallery-11">
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">our gallery</h1>
+
+        <div class="swiper gallery-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <img src="./assets/images/gallery-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="./assets/images/gallery-2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="./assets/images/gallery-3.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="./assets/images/gallery-4.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="./assets/images/gallery-5.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="./assets/images/gallery-6.jpg" alt="">
+                </div>
+
+            </div>
+
         </div>
+
     </section>
+
 
     <!-- review -->
 
@@ -203,7 +313,7 @@
                         Very convenient in traveling for transfer. I think everyone should have an experience
                         during summer vacation with your family</p>
                     <div class="user">
-                        <img src="images/pic-1.png" alt="">
+                        <img src="./assets/images/pic-1.png" alt="">
                         <div class="user-info">
                             <h3>John Devil</h3>
                             <div class="stars">
@@ -226,7 +336,7 @@
                         of the hotel is also perfect - right in the heart with easy access to all of the city's
                         attractions.</p>
                     <div class="user">
-                        <img src="images/pic-2.png" alt="">
+                        <img src="./assets/images/pic-2.png" alt="">
                         <div class="user-info">
                             <h3>My Linh</h3>
                             <div class="stars">
@@ -248,7 +358,7 @@
                         speak
                         English which is a bit hard at times. But overall a good hotel.</p>
                     <div class="user">
-                        <img src="images/pic-3.png" alt="">
+                        <img src="./assets/images/pic-3.png" alt="">
                         <div class="user-info">
                             <h3>Victoria</h3>
                             <div class="stars">
@@ -268,7 +378,7 @@
                     <p>It was a wonderful place. It has friendly and lovely staff, clean rooms and a great breakfast.
                         I will definitely visit again.</p>
                     <div class="user">
-                        <img src="images/pic-4.png" alt="">
+                        <img src="./assets/images/pic-4.png" alt="">
                         <div class="user-info">
                             <h3>Lan Huong</h3>
                             <div class="stars">
@@ -289,7 +399,7 @@
                         swimming pool is very long and has a beautiful view suitable for checking in. Reasonable price.
                     </p>
                     <div class="user">
-                        <img src="images/pic-5.png" alt="">
+                        <img src="./assets/images/pic-5.png" alt="">
                         <div class="user-info">
                             <h3>Duc Viet</h3>
                             <div class="stars">
@@ -310,7 +420,7 @@
                         on the rooftop of the hotel, the city view is very nice. The hotel has clean and fully equipped
                         rooms, breakfast with a variety of dishes.</p>
                     <div class="user">
-                        <img src="images/pic-6.png" alt="">
+                        <img src="./assets/images/pic-6.png" alt="">
                         <div class="user-info">
                             <h3>Kieu Trinh</h3>
                             <div class="stars">
@@ -341,7 +451,7 @@
         <div class="row">
 
             <div class="image">
-                <img src="images/FAQs.gif" alt="">
+                <img src="./assets/images/FAQs.gif" alt="">
             </div>
 
             <div class="content">
@@ -394,8 +504,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <script src="script.js"></script>
-
+    <script src="./assets/script.js"></script>
 
 </body>
 
