@@ -6,6 +6,8 @@
     --black: #333;
     --white: #fff;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    --dark-text: #333;
+    --light-text: #fff;
 }
 
 * {
