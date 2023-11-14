@@ -102,3 +102,41 @@ accordions.forEach(acco =>{
     }
 })
 
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const btnPopup = document.querySelector('.btnLogin-popup');
+const iconClose = document.querySelector('.icon-close');
+const iconRight = document.querySelectorAll('.icon-right');
+
+
+registerLink.addEventListener('click', ()=> {
+    wrapper.classList.add('active');
+});
+
+loginLink.addEventListener('click', ()=> {
+    wrapper.classList.remove('active');
+});
+
+btnPopup.addEventListener('click', ()=> {
+    wrapper.classList.add('active-popup');
+});
+
+iconClose.addEventListener('click', ()=> {
+    wrapper.classList.remove('active-popup');
+});
+
+iconRight.forEach(iconR => {
+    iconR.addEventListener('click', ()=> {
+        let getInput = iconR.parentElement.querySelector('input');
+        if (getInput.type === 'password') {
+            getInput.type = 'text';
+            iconR.classList.replace('eye-off','eye');
+            iconR.innerHTML = '<ion-icon name="eye"></ion-icon>';
+        } else {
+            getInput.type = 'password';
+            iconR.classList.replace('eye','eye-off');
+            iconR.innerHTML = '<ion-icon name="eye-off"></ion-icon>';
+        }
+    });
+});
