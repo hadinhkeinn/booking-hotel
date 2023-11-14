@@ -142,7 +142,7 @@ section {
     cursor: pointer;
 }
 
-.header .navbar .btnLogin-popup:hover{
+.header .navbar .btnLogin-popup:hover {
     color: var(--white);
     background: var(--secondary);
 }
@@ -316,7 +316,7 @@ section {
 
 .room-item__description {
     margin-top: 1rem;
-    color: var(--light-text);
+    color: var(--black);
     font-size: 1.4rem;
     overflow: hidden;
     display: -webkit-box;
@@ -623,44 +623,44 @@ section {
 
 /* footer */
 
-.footer{
+.footer {
     background: var(--secondary);
 }
 
-.footer .box-container{
+.footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
     font-size: 2.2rem;
     padding: 1rem 0;
     color: var(--primary);
 }
 
-.footer .box-container .box a{
+.footer .box-container .box a {
     font-size: 1.6rem;
     display: block;
     color: var(--white);
     padding: 1rem 0;
 }
 
-.footer .box-container .box a i{
+.footer .box-container .box a i {
     color: var(--primary);
     padding-right: .5rem;
 }
 
-.footer .box-container .box a:hover{
+.footer .box-container .box a:hover {
     color: var(--primary);
 }
 
-.footer .share{
+.footer .share {
     padding-top: 2rem;
     text-align: center;
 }
 
-.footer .share a{
+.footer .share a {
     color: var(--primary);
     font-size: 2rem;
     width: 5rem;
@@ -671,13 +671,13 @@ section {
     margin: .3rem;
 }
 
-.footer .share a:hover{
+.footer .share a:hover {
     color: var(--white);
     background: var(--primary);
     transform: rotate(360deg);
 }
 
-.footer .credit{
+.footer .credit {
     font-size: 2rem;
     text-align: center;
     margin-top: 2.5rem;
@@ -686,7 +686,7 @@ section {
     color: var(--white);
 }
 
-.footer .credit span{
+.footer .credit span {
     color: var(--primary);
 }
 
@@ -811,7 +811,7 @@ section {
     left: 8px;
     font-size: 1.5rem;
     color: var(--dark-text);
-    line-height: 30px;   
+    line-height: 30px;
 }
 
 .input-box .icon-right {
@@ -819,7 +819,7 @@ section {
     right: 8px;
     font-size: 1.5rem;
     color: var(--dark-text);
-    line-height: 30px;   
+    line-height: 30px;
     cursor: pointer;
 }
 
