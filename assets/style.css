@@ -128,7 +128,7 @@ section {
     color: var(--white);
 }
 
-<<<<<<<<< Temporary merge branch 1
+
 .header .navbar .btnLogin-popup {
     display: inline-block;
     margin-top: 1rem;
@@ -145,8 +145,7 @@ section {
     background: var(--secondary);
 }
 
-#menu-btn{
-=========
+
 #menu-btn {
     display: none;
     font-size: 2.5rem;
@@ -726,13 +725,11 @@ section {
 .wrapper .form-box.login {
     transition: transform .18s ease;
     transform: translateX(0);
-    /* display: none; */
 }
 
 .wrapper.active .form-box.login {
     transition: none;
     transform: translateX(-400px);
-    /* transform: translateX(0); */
 }
 
 .wrapper .form-box.register {

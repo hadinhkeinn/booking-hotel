@@ -110,8 +110,15 @@ var swiper = new Swiper(".review-slider", {
 });
 
 let accordions = document.querySelectorAll(".faqs .row .content .box");
+accordions.forEach((acco) => {
+  acco.onclick = () => {
+    accordions.forEach((subAcco) => {
+      subAcco.classList.remove("active");
+    });
+    acco.classList.add("active");
+  };
+});
 
-<<<<<<<<< Temporary merge branch 1
 const wrapper = document.querySelector('.wrapper');
 const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
@@ -149,13 +156,4 @@ iconRight.forEach(iconR => {
             iconR.innerHTML = '<ion-icon name="eye-off"></ion-icon>';
         }
     });
-=========
-accordions.forEach((acco) => {
-  acco.onclick = () => {
-    accordions.forEach((subAcco) => {
-      subAcco.classList.remove("active");
-    });
-    acco.classList.add("active");
-  };
->>>>>>>>> Temporary merge branch 2
-});
+  });
