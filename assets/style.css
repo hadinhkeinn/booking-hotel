@@ -6,6 +6,8 @@
     --black: #333;
     --white: #fff;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    --dark-text: #333;
+    --light-text: #fff;
 }
 
 * {
@@ -725,13 +727,11 @@ section {
 .wrapper .form-box.login {
     transition: transform .18s ease;
     transform: translateX(0);
-    /* display: none; */
 }
 
 .wrapper.active .form-box.login {
     transition: none;
     transform: translateX(-400px);
-    /* transform: translateX(0); */
 }
 
 .wrapper .form-box.register {
